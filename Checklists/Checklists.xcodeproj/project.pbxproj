@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8B734CA81B39C84400A93717 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B734CA71B39C84400A93717 /* ChecklistItem.swift */; };
-		8B734CAA1B39EF6A00A93717 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B734CA91B39EF6A00A93717 /* AddItemViewController.swift */; };
+		8B734CAA1B39EF6A00A93717 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B734CA91B39EF6A00A93717 /* ItemDetailViewController.swift */; };
 		8BEC04751B39A82E00C97EAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEC04741B39A82E00C97EAD /* AppDelegate.swift */; };
 		8BEC04771B39A82E00C97EAD /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEC04761B39A82E00C97EAD /* ChecklistViewController.swift */; };
 		8BEC047A1B39A82E00C97EAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BEC04781B39A82E00C97EAD /* Main.storyboard */; };
@@ -29,11 +29,11 @@
 
 /* Begin PBXFileReference section */
 		8B734CA71B39C84400A93717 /* ChecklistItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
-		8B734CA91B39EF6A00A93717 /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		8B734CA91B39EF6A00A93717 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ItemDetailViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		8BEC046F1B39A82E00C97EAD /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEC04731B39A82E00C97EAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BEC04741B39A82E00C97EAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8BEC04761B39A82E00C97EAD /* ChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
+		8BEC04761B39A82E00C97EAD /* ChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ChecklistViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		8BEC04791B39A82E00C97EAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BEC047B1B39A82E00C97EAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8BEC047E1B39A82E00C97EAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 			children = (
 				8BEC04741B39A82E00C97EAD /* AppDelegate.swift */,
 				8BEC04761B39A82E00C97EAD /* ChecklistViewController.swift */,
-				8B734CA91B39EF6A00A93717 /* AddItemViewController.swift */,
+				8B734CA91B39EF6A00A93717 /* ItemDetailViewController.swift */,
 				8B734CA71B39C84400A93717 /* ChecklistItem.swift */,
 				8BEC04781B39A82E00C97EAD /* Main.storyboard */,
 				8BEC047B1B39A82E00C97EAD /* Images.xcassets */,
@@ -219,7 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BEC04771B39A82E00C97EAD /* ChecklistViewController.swift in Sources */,
-				8B734CAA1B39EF6A00A93717 /* AddItemViewController.swift in Sources */,
+				8B734CAA1B39EF6A00A93717 /* ItemDetailViewController.swift in Sources */,
 				8B734CA81B39C84400A93717 /* ChecklistItem.swift in Sources */,
 				8BEC04751B39A82E00C97EAD /* AppDelegate.swift in Sources */,
 			);
