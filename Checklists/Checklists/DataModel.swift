@@ -10,10 +10,19 @@ import Foundation
 
 class DataModel {
     var lists = [Checklist]()
-    
+    var indexOfSelectChecklist: Int {
+        get {
+            return NSUserDefaults.standardUserDefaults().integerForKey("ChecklistIndex")
+        }
+        set {
+            NSUserDefaults.standardUserDefaults().setInteger(newValue, forKey: "ChecklistIndex")
+        }
+    }
     
     init() {
         loadChecklists()
+        registerDefaults()
+        handleFirstTime()
     }
     
     
@@ -41,10 +50,31 @@ class DataModel {
         let path = dataFilePath()
         if NSFileManager.defaultManager().fileExistsAtPath(path) {
             if let data = NSData(contentsOfFile: path){
+                println("checklists.plist dir: \(path)")
                 let unarchiver = NSKeyedUnarchiver(forReadingWithData: data)
                 lists = unarchiver.decodeObjectForKey("Checklists") as! [Checklist]
                 unarchiver.finishDecoding()
             }
         }
     }
+    
+    
+    func registerDefaults() {
+        let dictionnary = [ "ChecklistIndex": -1, "FirstTime": true ]
+        
+        NSUserDefaults.standardUserDefaults().registerDefaults(dictionnary)
+    }
+    
+    
+    func handleFirstTime() {
+        let userDefault = NSUserDefaults.standardUserDefaults()
+        let firstTime = userDefault.boolForKey("FirstTime")
+        if firstTime {
+            let checklist = Checklist(name: "List")
+            lists.append(checklist)
+            indexOfSelectChecklist = 0
+            userDefault.setBool(false, forKey: "FirstTime")
+        }
+    }
+    
 }
