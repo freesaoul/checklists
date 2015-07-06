@@ -43,7 +43,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="(Name of the Checklist)" id="Avz-hH-dO5">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="4Px-ze-Gw1"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="4Px-ze-Gw1">
+                            <connections>
+                                <segue destination="BU7-DR-jem" kind="presentation" identifier="addItem" id="ziY-tu-wJn"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vBn-fv-aUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -245,4 +249,7 @@
             <point key="canvasLocation" x="1917" y="330"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ziY-tu-wJn"/>
+    </inferredMetricsTieBreakers>
 </document>
