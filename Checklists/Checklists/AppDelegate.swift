@@ -17,7 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         let navigationController = window!.rootViewController as! UINavigationController
         let controller = navigationController.viewControllers[0] as! AllListsViewController
-        
         controller.dataModel = dataModel
         
         return true
@@ -47,6 +46,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func saveData() {
         dataModel.saveChecklists()
+    }
+    
+    
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        println("didReceiveLocalNotification \(notification)")
     }
     
 }

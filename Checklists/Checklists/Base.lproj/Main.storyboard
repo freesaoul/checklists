@@ -97,6 +97,55 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="Pd0-Hn-VB9">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="rvR-zr-Naw">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rvR-zr-Naw" id="ng3-qn-D5v">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remind Me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qei-6X-x5s">
+                                                    <rect key="frame" x="15" y="12" width="86" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BUr-iV-iDI">
+                                                    <rect key="frame" x="543" y="6" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="shouldRemindToggled:" destination="72J-PD-1fo" eventType="valueChanged" id="Vo6-Aq-niF"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="BUr-iV-iDI" secondAttribute="trailing" constant="8" id="6nY-WZ-eRQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="BUr-iV-iDI" secondAttribute="bottom" constant="6.5" id="xLq-P2-gNX"/>
+                                                <constraint firstItem="BUr-iV-iDI" firstAttribute="top" secondItem="ng3-qn-D5v" secondAttribute="top" constant="6" id="zTG-J3-kr0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="OTw-gF-pTG" detailTextLabel="dUq-GZ-GAf" style="IBUITableViewCellStyleValue1" id="J0k-Kj-jFU">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J0k-Kj-jFU" id="7NF-YY-zSY">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Due Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OTw-gF-pTG">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dUq-GZ-GAf">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="72J-PD-1fo" id="iOO-HX-hgE"/>
@@ -117,6 +166,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="doneBarButton" destination="hdh-MM-tzG" id="6Mm-Hu-agW"/>
+                        <outlet property="dueDateLabel" destination="dUq-GZ-GAf" id="qgu-NN-gYC"/>
+                        <outlet property="shouldRemindSwitch" destination="BUr-iV-iDI" id="AXa-sW-F7H"/>
                         <outlet property="textField" destination="Slg-Da-Nq2" id="iT5-H3-Fo7"/>
                     </connections>
                 </tableViewController>
